@@ -2,35 +2,11 @@
     margin: 0;
     padding: 0;
 }
-/* Example media query for smaller screens */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        height: 80px;
-    }
-
-    header div ul li {
-        margin: 15px 10%;
-    }
-
-    .firstSection {
-        flex-direction: column;
-        margin: 20px;
-    }
-
-    .firstSection .intro {
-        font-size: 30px;
-        padding: 20px;
-    }
-}
 
 body {
-    background: rgb(58, 14, 111);
+    background: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
-    background-image: url('background.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    /* background-image: url('background.jpg'); Replace 'your-image.jpg' with your image file path */
     background-size: cover; 
 }
 
@@ -38,11 +14,14 @@ header {
     display: flex;
     justify-content: space-around;
     color: white;
-    /* background-color: rgb(41, 11, 78); */
+    background-color: rgb(162, 160, 160);
     height: 100px;
-    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
-
+header img {
+    width: 98px;
+    height: 45px;
+}
   
 header div{
     margin: 20px 0;
@@ -64,5 +43,61 @@ header div ul li {
 }
 .firstSection .intro {
     font-size: 50px;
-    padding: 120px;
+    padding: 100px;
 }
+main hr {
+    border: 0;
+    background: #000000;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.secondSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.secondSection .intro2 {
+    font-size: 50px;
+    padding: 100px;
+}
+/* styles.css */
+.thirdSection {
+    position: relative; /* Required for absolute positioning within the container */
+    display: inline-block; /* Keeps the container inline with the text */
+}
+
+.thirdSection img {
+    max-width: 100%; /* Ensure the image resizes with the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    width: 100vw;
+}
+.text-overlay p {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.text-overlay {
+    position: absolute; /* Position the text element relative to the container */
+    top: 15%; /* Adjust vertical position as needed (e.g., to center it) */
+    left: 50%; /* Adjust horizontal position as needed (e.g., to center it) */
+    transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+    /* background-color: rgba(255, 255, 255, 0.7);  */
+    padding: 10px; /* Optional: Add padding to the text */
+    color: #000; /* Optional: Set text color */
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(162, 160, 160);
+    height: 100px;
+    box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+footer .copyright {
+    font-size: 10px;
+    margin: 60px;
+}
+
