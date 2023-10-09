@@ -2,6 +2,31 @@
     margin: 0;
     padding: 0;
 }
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    header div ul li {
+        margin: 15px 10%;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .firstSection .intro {
+        font-size: 30px;
+        padding: 20px;
+    }
+}
+
 body {
     background: rgb(58, 14, 111);
     font-family: 'Poppins', sans-serif;
