@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(58, 14, 111);
+    font-family: 'Poppins', sans-serif;
+    background-image: url('background.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; 
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    /* background-color: rgb(41, 11, 78); */
+    height: 100px;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); */
+}
+
+  
+header div{
+    margin: 20px 0;
+}
+header div ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header div ul li {
+    margin: 15px 20%;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.firstSection .intro {
+    font-size: 50px;
+    padding: 120px;
+}
