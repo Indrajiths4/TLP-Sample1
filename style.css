@@ -14,13 +14,13 @@ header {
     display: flex;
     justify-content: space-around;
     color: white;
-    background-color: rgb(162, 160, 160);
+    background-color: rgb(16, 16, 16);
     height: 100px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 header img {
-    width: 98px;
-    height: 45px;
+    width: 71px;
+    height: 57px;
 }
   
 header div{
@@ -36,35 +36,13 @@ header div ul li {
     margin: 15px 20%;
 }
 
-.firstSection {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
-}
-.firstSection .intro {
-    font-size: 50px;
-    padding: 100px;
-}
-main hr {
-    border: 0;
-    background: #000000;
-    height: 1.2px;
-    margin: 40px 84px;
-}
-.secondSection {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
-}
 
-.secondSection .intro2 {
-    font-size: 50px;
-    padding: 100px;
-}
-/* styles.css */
 .thirdSection {
-    position: relative; /* Required for absolute positioning within the container */
-    display: inline-block; /* Keeps the container inline with the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 .thirdSection img {
@@ -72,26 +50,80 @@ main hr {
     height: auto; /* Maintain the image's aspect ratio */
     width: 100vw;
 }
-.text-overlay p {
+.thirdSection .text-overlay p {
     font-size: 40px;
     color: white;
     text-align: center;
 }
-.text-overlay {
+
+.thirdSection .text-overlay {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+    .thirdSection .text-overlay {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding: 5px;   /* Adjust padding for smaller screens */
+    }
+
+    .image-container img {
+        max-width: 80%;  /* Adjust max width for smaller screens */
+    }
+}
+.thirdSection #link {
+    font-size: medium;
+}
+.thirdSection a {
+    text-decoration: none;
+    color: rgb(46, 39, 178);
+}
+.thirdSection a:hover {
+    text-decoration: underline;
+}
+.fourthSection {
+    position: relative; /* Required for absolute positioning within the container */
+    display: inline-block; /* Keeps the container inline with the text */
+}
+
+.fourthSection img {
+    max-width: 100%; /* Ensure the image resizes with the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    width: 100vw;
+}
+.fourthSection .text-overlay p {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.fourthSection .text-overlay {
     position: absolute; /* Position the text element relative to the container */
-    top: 15%; /* Adjust vertical position as needed (e.g., to center it) */
+    top: 28%; /* Adjust vertical position as needed (e.g., to center it) */
     left: 50%; /* Adjust horizontal position as needed (e.g., to center it) */
     transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
     /* background-color: rgba(255, 255, 255, 0.7);  */
-    padding: 10px; /* Optional: Add padding to the text */
-    color: #000; /* Optional: Set text color */
+    padding: 10px; 
+    /* color: #ffffff;  */
+}
+.fourthSection #link {
+    font-size: medium;
+}
+.fourthSection a {
+    text-decoration: none;
+    color: rgb(46, 39, 178);
+}
+.fourthSection a:hover {
+    text-decoration: underline;
 }
 
 footer {
     display: flex;
     justify-content: space-around;
-    color: white;
-    background-color: rgb(162, 160, 160);
+    color: rgb(108, 107, 107);
+    background-color: rgb(206, 206, 206);
     height: 100px;
     box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.5);
 }
