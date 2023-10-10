@@ -74,16 +74,7 @@ header li {
     padding: 10px;
     color: #ffffff;
 }
-@media screen and (max-width: 768px) {
-    .thirdSection .text-overlay {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        padding: 5px;   /* Adjust padding for smaller screens */
-    }
 
-    .image-container img {
-        max-width: 80%;  /* Adjust max width for smaller screens */
-    }
-}
 .thirdSection #link {
     font-size: medium;
 }
