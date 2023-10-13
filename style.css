@@ -54,6 +54,7 @@ header li {
     text-align: center;
     position: relative;
 } */
+
 .thirdSection {
     position: relative; /* Required for absolute positioning within the container */
     display: inline-block; /* Keeps the container inline with the text */
@@ -88,11 +89,7 @@ header li {
 .thirdSection a:hover {
     text-decoration: underline;
 }
-main hr {
-    border: 0;
-    background: #ffffff;
-    height: 15px;
-}
+
 .fourthSection {
     position: relative; /* Required for absolute positioning within the container */
     display: inline-block; /* Keeps the container inline with the text */
@@ -104,9 +101,12 @@ main hr {
     width: 100vw;
 }
 .fourthSection .text-overlay p {
-    font-size: 33px;
+    font-size: 36px;
     color: rgb(0, 0, 0);
     text-align: center;
+}
+.fourthSection .text-overlay p {
+    margin: 3px;
 }
 .fourthSection .text-overlay {
     position: absolute; /* Position the text element relative to the container */
@@ -127,6 +127,51 @@ main hr {
 .fourthSection a:hover {
     text-decoration: underline;
 }
+.fifthSection {
+    position: relative; /* Required for absolute positioning within the container */
+    display: inline-block; /* Keeps the container inline with the text */
+}
+
+.fifthSection img {
+    max-width: 100%; /* Ensure the image resizes with the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    width: 100vw;
+}
+.fifthSection p img {
+    width: 190px;
+}
+.fifthSection .text-overlay p {
+    font-size: 33px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#red {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: rgb(136, 26, 26);
+}
+.fifthSection .text-overlay p {
+    margin: 0;
+}
+.fifthSection .text-overlay {
+    position: absolute; /* Position the text element relative to the container */
+    top: 12%; /* Adjust vertical position as needed (e.g., to center it) */
+    left: 50%; /* Adjust horizontal position as needed (e.g., to center it) */
+    transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+    /* background-color: rgba(255, 255, 255, 0.7);  */
+    padding: 10px; 
+    /* color: #ffffff;  */
+}
+.fifthSection #link {
+    font-size: medium;
+}
+.fifthSection a {
+    text-decoration: none;
+    color: rgb(46, 39, 178);
+}
+.fifthSection a:hover {
+    text-decoration: underline;
+}
 
 footer {
     display: flex;
@@ -142,3 +187,195 @@ footer .copyright {
     margin: 60px;
 }
 
+@media all and (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+        /* background-image: url('background.jpg'); Replace 'your-image.jpg' with your image file path */
+        background-size: cover; 
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(16, 16, 16);
+        height: 80px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    header img {
+        width: 45px;
+        height: 40px;
+        margin: -6px;
+    }
+      
+    header div{
+        margin: 20px 0;
+    }
+    header div ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header div ul li {
+        margin: 15px 20%;
+    }
+    header li {
+        font-size: 5px;
+        transition: transform 0.2s; 
+      }
+      
+      
+      header li:hover {
+        transform: scale(1.1); 
+      }
+      
+    
+    /* .thirdSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    } */
+    
+    .thirdSection {
+        position: relative; /* Required for absolute positioning within the container */
+        display: inline-block; /* Keeps the container inline with the text */
+    }
+    .thirdSection img {
+        max-width: 100%; /* Ensure the image resizes with the container */
+        height: auto; /* Maintain the image's aspect ratio */
+        width: 100vw;
+    }
+    .thirdSection .text-overlay p {
+        font-size: 10px;
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .thirdSection .text-overlay {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        color: #ffffff;
+    }
+    
+    .thirdSection #link {
+        font-size: 10px;
+    }
+    .thirdSection a {
+        text-decoration: none;
+        color: rgb(46, 39, 178);
+    }
+    .thirdSection a:hover {
+        text-decoration: underline;
+    }
+    
+    .fourthSection {
+        position: relative; /* Required for absolute positioning within the container */
+        display: inline-block; /* Keeps the container inline with the text */
+    }
+    
+    .fourthSection img {
+        max-width: 100%; /* Ensure the image resizes with the container */
+        height: auto; /* Maintain the image's aspect ratio */
+        width: 100vw;
+    }
+    .fourthSection .text-overlay p {
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin: 0;
+    }
+    .fourthSection .text-overlay p {
+        margin: 3px;
+    }
+    .fourthSection .text-overlay {
+        position: absolute; /* Position the text element relative to the container */
+        top: 28%; /* Adjust vertical position as needed (e.g., to center it) */
+        left: 50%; /* Adjust horizontal position as needed (e.g., to center it) */
+        transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+        /* background-color: rgba(255, 255, 255, 0.7);  */
+        padding: 10px; 
+        /* color: #ffffff;  */
+    }
+    .fourthSection #link {
+        font-size: 10px;
+    }
+    .fourthSection a {
+        text-decoration: none;
+        color: rgb(46, 39, 178);
+    }
+    .fourthSection a:hover {
+        text-decoration: underline;
+    }
+    .fifthSection {
+        position: relative; /* Required for absolute positioning within the container */
+        display: inline-block; /* Keeps the container inline with the text */
+    }
+    
+    .fifthSection img {
+        max-width: 100%; /* Ensure the image resizes with the container */
+        height: auto; /* Maintain the image's aspect ratio */
+        width: 100vw;
+    }
+    .fifthSection p img {
+        width: 50px;
+    }
+    .fifthSection .text-overlay p {
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    #red {
+        font-size: 5px;
+        letter-spacing: 2px;
+        color: rgb(136, 26, 26);
+    }
+    .fifthSection .text-overlay p {
+        margin: 0;
+    }
+    .fifthSection .text-overlay {
+        position: absolute; /* Position the text element relative to the container */
+        top: 12%; /* Adjust vertical position as needed (e.g., to center it) */
+        left: 50%; /* Adjust horizontal position as needed (e.g., to center it) */
+        transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+        /* background-color: rgba(255, 255, 255, 0.7);  */
+        padding: 10px; 
+        /* color: #ffffff;  */
+    }
+    .fifthSection #link {
+        font-size: 5px;
+    }
+    .fifthSection a {
+        text-decoration: none;
+        color: rgb(46, 39, 178);
+    }
+    .fifthSection a:hover {
+        text-decoration: underline;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-around;
+        color: rgb(108, 107, 107);
+        background-color: rgb(237, 234, 234);
+        height: 100px;
+        box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.5);
+    }
+    
+    footer .copyright {
+        font-size: 10px;
+        margin: 60px;
+    }
+}
