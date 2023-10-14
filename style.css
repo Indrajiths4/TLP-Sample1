@@ -8,59 +8,39 @@ html {
 body {
     background: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
-    background-size: cover; 
-}
-
-
+    
+} 
 header {
     display: flex;
     justify-content: space-around;
     color: white;
     background-color: rgb(16, 16, 16);
-    height: 100px;
+    height: 110px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 header img {
-    width: 71px;
-    height: 60px;
-    margin: -6px;
-}
-  
-header div{
-    margin: 20px 0;
-}
-header div ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-header div ul li {
-    margin: 15px 20%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 2px;
+    padding: 10px;
 }
 header a {
     text-decoration: none;
     color: white;
 }
+  header nav ul {
+    display: flex;
+    list-style: none;
+}
 header li {
+    padding: 40px;
     font-size: 16px;
+    margin-right: 20px;
     transition: transform 0.2s; 
   }
-  
-  
   header li:hover {
     transform: scale(1.1); 
   }
-  
-
-/* .thirdSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-} */
-
 .thirdSection {
     position: relative; /* Required for absolute positioning within the container */
     display: inline-block; /* Keeps the container inline with the text */
@@ -276,7 +256,7 @@ footer .copyright {
     margin: 60px;
 }
 
-@media all and (max-width: 1300px) {
+@media all and (min-width: 500px) and (max-width: 1300px) {
     * {
         margin: 0;
         padding: 0;
@@ -294,37 +274,36 @@ footer .copyright {
         justify-content: space-around;
         color: white;
         background-color: rgb(16, 16, 16);
-        height: 90px;
+        height: 110px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     }
     header img {
-        width: 45px;
-        height: 40px;
-        margin: -6px;
-    }
-      
-    header div{
-        margin: 20px 0;
-    }
-    header div ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 2px;
+        padding: 10px;
     }
     
-    header div ul li {
-        margin: 15px 20%;
+    header a {
+        text-decoration: none;
+        color: white;
     }
+    
+      header nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
     header li {
-        font-size: 13px;
+        padding: 40px;
+        font-size: 16px;
+        margin-right: 20px;
         transition: transform 0.2s; 
       }
-      
       
       header li:hover {
         transform: scale(1.1); 
       }
-      
     
     /* .thirdSection {
         display: flex;
@@ -536,63 +515,30 @@ footer .copyright {
     }
 }
 @media all and (max-width: 500px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        background: rgb(255, 255, 255);
-        font-family: 'Poppins', sans-serif;
-        background-size: cover; 
-        
-    }
-    
     header {
-        display: flex;
-        justify-content: space-around;
-        color: white;
-        background-color: rgb(16, 16, 16);
-        height: 80px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-    }
-    header img {
-        width: 45px;
-        height: 40px;
-        margin: -6px;
-    }
-      
-    header div{
-        margin: 20px 0;
-    }
-    header div ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    header div ul li {
-        margin: 15px 20%;
-    }
-    header li {
-        font-size: 5px;
-        transition: transform 0.2s; 
-      }
-      
-      
-      header li:hover {
-        transform: scale(1.1); 
-      }
-      
-    
-    /* .thirdSection {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        position: relative;
-    } */
-    
+        color: white;
+        background-color: rgb(16, 16, 16);
+        height: 60px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    header img {
+        padding: 14px;
+    }
+    header nav ul {
+        
+    }
+    header li {
+        padding: 0;
+        margin-right: 20px;
+        font-size: 5px;
+        transition: transform 0.2s; 
+    }
+    header li:hover {
+        transform: scale(1.1); 
+    }
     .thirdSection {
         position: relative; /* Required for absolute positioning within the container */
         display: inline-block; /* Keeps the container inline with the text */
